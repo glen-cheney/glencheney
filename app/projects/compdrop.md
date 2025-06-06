@@ -2,7 +2,7 @@
 title: 'Compdrop'
 date: '2017-09-01'
 id: 7
-href: 'https://compdrop.io/'
+href: 'https://github.com/glen-cheney/compdrop'
 tags:
   - open source
   - drag-n-drop

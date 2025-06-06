@@ -16,7 +16,7 @@ export const SocialLinks: React.FC = () => (
         title="GitHub"
         target="_blank"
         rel="noopener noreferrer"
-        href="https://github.com/Vestride"
+        href="https://github.com/glen-cheney"
       >
         <Image src={github} alt="GitHub logo" width="64" />
       </a>
