@@ -22,7 +22,7 @@ export const About: React.FC = () => {
           </p>
           <p>I enjoy working with people who care about the work they do and for the people who use it.</p>
           <p className="marginless">
-            <a href="/GlenCheneyResume2018.pdf">resume.pdf</a>
+            <a href="/GlenCheneyResume2025.pdf">resume.pdf</a>
           </p>
         </div>
         <div className="col-3@sm col-start-2@sm order-first@sm">
@@ -48,7 +48,7 @@ export const About: React.FC = () => {
         <div className="col-12 col-5@sm col-start-2@sm order-first@sm">
           <h2>About this site</h2>
           <p className="marginless">
-            <a href="https://github.com/Vestride/glencheney">This site</a> is built on{' '}
+            <a href="https://github.com/glen-cheney/glencheney">This site</a> is built on{' '}
             <a target="_blank" rel="noopener noreferrer" href="https://nextjs.org/">
               Next.js
             </a>
