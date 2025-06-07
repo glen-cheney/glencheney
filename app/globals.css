@@ -38,16 +38,16 @@ template {
   display: none;
 }
 a {
-  color: #3498db;
+  color: var(--accent-secondary);
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 a:visited {
-  color: #3498db;
+  color: var(--accent-secondary);
 }
 a:active,
 a:hover {
-  color: #de3d81;
+  color: var(--accent-primary);
 }
 abbr[title] {
   border-bottom: none;
@@ -191,7 +191,15 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsl(204, 60%, 21%);
+  --text-primary: hsl(204, 60%, 21%);
+  --text-secondary: hsl(204, 49%, 30%);
+  --surface-primary: hsl(0, 0%, 100%);
+  --surface-secondary: hsl(0, 0%, 96%);
+  --surface-tertiary: hsl(204, 70%, 95%);
+  --accent-primary: hsl(334, 71%, 55%);
+  --accent-secondary: hsl(204, 70%, 53%);
+  color: var(--text-primary);
+  background-color: var(--surface-primary);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
     Helvetica Neue, sans-serif;
   font-size: 16px;
@@ -203,6 +211,22 @@ body {
   -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
   -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
   font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    --text-primary: hsl(204, 33%, 80%);
+    --text-secondary: hsl(204, 49%, 76%);
+    --surface-primary: hsl(0, 0%, 7%);
+    --surface-secondary: hsl(0, 0%, 12%);
+    --surface-tertiary: hsl(204, 70%, 28%);
+    --accent-primary: hsl(334, 71%, 55%);
+    --accent-secondary: hsl(204, 70%, 53%);
+  }
+
+  img,
+  video {
+    filter: brightness(0.9);
+  }
 }
 img {
   max-width: 100%;

@@ -34,6 +34,16 @@ export default async function Page({ params }: SlugPageProps) {
 
   return (
     <Project frontmatter={frontmatter} hero={hero} next={next} previous={previous}>
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
+        media="(prefers-color-scheme: dark)"
+      />
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/prismjs@1.30.0/themes/prism.min.css"
+        media="(prefers-color-scheme: light)"
+      />
       {content}
     </Project>
   );

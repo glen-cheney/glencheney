@@ -3,7 +3,6 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 
 import '@/globals.css';
 import '@/grid.css';
-import '@/prism-theme.css';
 import { Header } from '@/components/header';
 import { TITLE, DESCRIPTION } from '@/constants';
 
