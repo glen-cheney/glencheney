@@ -34,8 +34,8 @@
 .tag {
   padding: 4px 8px;
   white-space: nowrap;
-  background-color: hsl(204, 70%, 95%);
-  color: hsl(204, 49%, 30%);
+  background-color: var(--surface-tertiary);
+  color: var(--text-secondary);
   border-radius: 10px;
   font-size: 80%;
 }

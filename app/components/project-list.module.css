@@ -11,7 +11,7 @@ a.project {
 }
 
 a.project:hover {
-  color: #de3d81;
+  color: var(--accent-primary);
 }
 
 .project:active {
