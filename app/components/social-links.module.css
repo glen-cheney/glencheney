@@ -5,6 +5,8 @@
 }
 
 .social {
+  display: flex;
+  align-items: center;
   width: 48px;
   height: 48px;
 }
@@ -13,5 +15,19 @@
   .social {
     width: 64px;
     height: 64px;
+  }
+}
+
+.iconDark {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .iconLight {
+    display: none;
+  }
+
+  .iconDark {
+    display: block;
   }
 }

@@ -2,9 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 
 import styles from './social-links.module.css';
-import github from '../../public/github.svg';
+import githubLight from '../../public/github-light.svg';
+import githubDark from '../../public/github-dark.svg';
 import twitter from '../../public/twitter.svg';
-import codepen from '../../public/codepen.svg';
+import codepenLight from '../../public/codepen-light.svg';
+import codepenDark from '../../public/codepen-dark.svg';
+import blueskyLight from '../../public/bluesky-light.svg';
+import blueskyDark from '../../public/bluesky-dark.svg';
 import linkedin from '../../public/linkedin.svg';
 
 export const SocialLinks: React.FC = () => (
@@ -18,16 +22,27 @@ export const SocialLinks: React.FC = () => (
         rel="noopener noreferrer"
         href="https://github.com/glen-cheney"
       >
-        <Image src={github} alt="GitHub logo" width="64" />
+        <Image className={styles.iconLight} src={githubLight} alt="GitHub logo" width="64" />
+        <Image className={styles.iconDark} src={githubDark} alt="GitHub logo" width="64" />
       </a>
       <a
         className={styles.social}
-        title="Twitter"
+        title="Bluesky"
         target="_blank"
         rel="noopener noreferrer"
-        href="https://twitter.com/Vestride"
+        href="https://bsky.app/profile/glencheney.com"
       >
-        <Image src={twitter} alt="Twitter logo" width="64" />
+        <Image className={styles.iconLight} src={blueskyLight} alt="Bluesky logo" width="64" />
+        <Image className={styles.iconDark} src={blueskyDark} alt="Bluesky logo" width="64" />
+      </a>
+      <a
+        className={styles.social}
+        title="Twitter / X"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://x.com/Vestride"
+      >
+        <Image src={twitter} alt="X logo" width="64" />
       </a>
       <a
         className={styles.social}
@@ -36,7 +51,8 @@ export const SocialLinks: React.FC = () => (
         rel="noopener noreferrer"
         href="http://codepen.io/Vestride/"
       >
-        <Image src={codepen} alt="CodePen logo" width="64" />
+        <Image className={styles.iconLight} src={codepenLight} alt="CodePen logo" width="64" />
+        <Image className={styles.iconDark} src={codepenDark} alt="CodePen logo" width="64" />
       </a>
       <a
         className={styles.social}
