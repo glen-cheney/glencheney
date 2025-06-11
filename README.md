@@ -9,7 +9,7 @@ This is a Next.js site. Components are written in React and project pages are wr
 First, run the development server:
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

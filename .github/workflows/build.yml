@@ -8,20 +8,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Enable Corepack
-        run: corepack enable
-
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: 'yarn'
 
       - name: Install dependencies
-        run: yarn install --immutable
+        run: npm ci
 
       - name: Lint files
-        run: yarn lint
+        run: npm run lint
 
       - name: Build files
-        run: yarn build
+        run: npm run build
