@@ -59,7 +59,7 @@ export const SocialLinks: React.FC = () => (
         title="LinkedIn"
         target="_blank"
         rel="noopener noreferrer"
-        href="https://www.linkedin.com/in/glenium/"
+        href="https://www.linkedin.com/in/glencheney/"
       >
         <Image src={linkedin} alt="LinkedIn logo" width="64" />
       </a>
